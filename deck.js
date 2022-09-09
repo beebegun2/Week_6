@@ -39,19 +39,21 @@ class Card {
 		this.suit = suit
 		this.value = value
 	}
-}
-
-let color() {
+//return the corresponding color to the correct suit
+get color() {
     return this.suit === '♥' || this.suit === '♦' ? 'red' : 'black'
 }
-        
-function getHTML() {
+   
+//calling the HTML elements
+getHTML() {
     const cardDiv = document.createElement('div')
     cardDiv.innerText = this.suit
     cardDiv.classList.add("card", this.color)
     cardDiv.dataset.value = `${this.value} ${this.suit}`
         return cardDiv
+	}
 }
+
 
 //create a function to create a new deck for all cards using .flatMap to take all of the arrays into one array
 function freshDeck() {
