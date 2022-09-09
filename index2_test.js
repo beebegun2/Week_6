@@ -1,15 +1,15 @@
 var expect = chai.expect;
 
 describe('MyFunctions', function() {
-    describe('#doSomething', function() {
-        it('should concatenate the two parameters', function() {
-            var x = doSomething('Hello', 5)
-            expect(x).to.equal('Hello5');
+    describe('#startGame', function() {
+        it('should split the deck into half', function() {
+            var Deck = startGame(26, 26)
+            expect(Deck).to.equal('26');
         });
 
-        it('should throw an error if first paramenter is not a string', function() {
+        it('should throw an error if deck did not split', function() {
             expect(function() {
-                doSomething(5, 5);
+                startGame(26, 28);
             }).to.throw(Error);
         });
     });
