@@ -1,0 +1,26 @@
+{
+  "name": "week_6",
+  "version": "1.0.0",
+  "description": "\"# Week_6\"",
+  "main": "deck.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beebegun2/Week_6.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/beebegun2/Week_6/issues"
+  },
+  "homepage": "https://github.com/beebegun2/Week_6#readme",
+  "dependencies": {
+    "chai": "^4.3.6",
+    "mocha": "^10.0.0"
+  }
+}
