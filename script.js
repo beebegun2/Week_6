@@ -41,7 +41,6 @@ document.addEventListener('click', () => {
 		return
 	}
 	
-	
 	if(inRound) {
 		cleanBeforeRound()
 	}else {
@@ -118,7 +117,7 @@ function isRoundWinner(cardOne, cardTwo) {
 }
 //create function to stop game when either player has no more cards
 function isGameOver(deck) {
-	return deck.numberOfCards === 0
+	return deck.numberOfCards === 0 
 }
 
 console.log(playerDeck)

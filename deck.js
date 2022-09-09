@@ -11,10 +11,12 @@ export default class Deck {
 	get numberOfCards() {
 		return this.cards.length
 	}
+
 	//return the top card of the deck
 	pop() {
 		return this.cards.shift()
 		}
+
 		//add the card to the bottom of the deck 
 		push(card) {
 		this.cards.push(card)
@@ -31,7 +33,8 @@ export default class Deck {
 		}
 	}
 }
-
+console.log(suits)
+console.log(values)
 
 //create a card class and declare the suit value. 
 class Card {
@@ -39,11 +42,12 @@ class Card {
 		this.suit = suit
 		this.value = value
 	}
+
 //return the corresponding color to the correct suit
 get color() {
     return this.suit === '♥' || this.suit === '♦' ? 'red' : 'black'
 }
-   
+ 
 //calling the HTML elements
 getHTML() {
     const cardDiv = document.createElement('div')
